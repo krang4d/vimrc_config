@@ -6,10 +6,20 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/c.vim'
-Plug 'ericcurtin/CurtineIncSw.vim'
+"Plug 'ericcurtin/CurtineIncSw.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-syntastic/syntastic'
+Plug 'ap/vim-buftabline'
+Plug 'chemzqm/vim-iterm2-start'
+"Fuzzy finder files and Library L9 to do
+"Plug 'eparreno/vim-l9'
+"Plug 'vim-scripts/FuzzyFinder'
+Plug 'kien/ctrlp.vim'
+"Fuzzy end
+
+" colorschemes
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -21,6 +31,8 @@ let g:C_UseTool_doxygen='yes'
 map <F5> :call CurtineIncSw()<CR>
 
 set number
+set relativenumber
+
 set expandtab
 set tabstop=3
 
@@ -39,6 +51,9 @@ set backspace=indent,eol,start
 map <silent> <leader><leader> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
+"let g:ctrlp_map = '<c-]>'
+"let g:ctrlp_cmd = 'Ctrl]'
+
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -47,8 +62,8 @@ noremap <Right> <NOP>
 "copy/past mapping, need to install +xterm-clipboard (apt-get install vim-gtk)
 nnoremap <C-y> "+y
 vnoremap <C-y> "+y
-nnoremap <C-p> "+p
-vnoremap <C-p> "+p
+"nnoremap <C-p> "+p
+"vnoremap <C-p> "+p
 
 "let mapleader=","
 let &path.="/usr/include/,/usr/include/c++/7"
