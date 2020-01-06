@@ -18,6 +18,8 @@ Plug 'chemzqm/vim-iterm2-start'
 Plug 'kien/ctrlp.vim'
 "Fuzzy end
 
+Plug 'tpope/vim-surround'
+
 " colorschemes
 Plug 'chriskempson/base16-vim'
 
@@ -96,3 +98,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"colorscheme base16-default-dark
+let base16colorspace=256  " Access colors present in 256 colorspace
