@@ -1,4 +1,5 @@
-let g:ycm_use_clangd = 1
+let g:ycm_use_clangd = 0
+set encoding=utf-8
 
 call plug#begin('~/.vim/plugged')
 
