@@ -101,7 +101,7 @@ let g:syntastic_check_on_wq = 0
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 "tabs
-set listchars=eol:¬,precedes:«,extends:»,space:·, tab:→\ ,trail:·  "tab:▸·,
+set listchars=eol:¬,precedes:«,extends:»,space:·,tab:→\ ,trail:·  "tab:▸·,
 set expandtab
 set tabstop=3
 set shiftwidth=3
