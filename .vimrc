@@ -101,3 +101,4 @@ let g:syntastic_check_on_wq = 0
 
 "colorscheme base16-default-dark
 let base16colorspace=256  " Access colors present in 256 colorspace
+set listchars=tab:▸·,eol:¬,precedes:«,extends:»,space:·
