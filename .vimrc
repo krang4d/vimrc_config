@@ -36,6 +36,7 @@ map <F5> :call CurtineIncSw()<CR>
 set number
 set relativenumber
 
+set splitright
 
 set hlsearch
 set incsearch
@@ -101,9 +102,11 @@ let g:syntastic_check_on_wq = 0
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 "tabs
-set listchars=eol:¬,precedes:«,extends:»,space:·,tab:→\ ,trail:·  "tab:▸·,
+set listchars=eol:¬,precedes:«,extends:»,space:·,tab:→\
+",trail:·
+"tab:▸·,
 set expandtab
 set tabstop=3
 set shiftwidth=3
 set smarttab
-set softtabstop=3
+set softtabstop=2
