@@ -38,8 +38,11 @@ set relativenumber
 
 set splitright
 
+"Searching sets
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 
 set mouse=a
 if &term =~ '^screen'
