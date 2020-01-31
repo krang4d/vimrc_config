@@ -38,8 +38,11 @@ set relativenumber
 
 set splitright
 
+"Searching sets
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 
 set mouse=a
 if &term =~ '^screen'
@@ -51,6 +54,8 @@ set backspace=indent,eol,start
 
 "mappings
 map <silent> <leader><leader> :NERDTreeToggle<CR>
+
+"toggle the majutsushi/tagbar window
 nmap <F8> :TagbarToggle<CR>
 
 "let g:ctrlp_map = '<c-]>'
