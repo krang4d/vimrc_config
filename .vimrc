@@ -1,17 +1,15 @@
-let g:ycm_use_clangd = 0
 set encoding=utf-8
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'Valloric/YouCompleteMe'
+"
+"Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/c.vim'
 "Plug 'ericcurtin/CurtineIncSw.vim'
-Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'easymotion/vim-easymotion'
-Plug 'vim-syntastic/syntastic'
-Plug 'ap/vim-buftabline'
+"Plug 'ap/vim-buftabline'
 Plug 'chemzqm/vim-iterm2-start'
 "Fuzzy finder files and Library L9 to do
 "Plug 'eparreno/vim-l9'
@@ -19,7 +17,7 @@ Plug 'chemzqm/vim-iterm2-start'
 Plug 'kien/ctrlp.vim'
 "Fuzzy end
 
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 
 " colorschemes
 Plug 'chriskempson/base16-vim'
@@ -29,9 +27,6 @@ call plug#end()
 "To enable the tools for cmake or doxygen by c.vim plugin
 let g:C_UseTool_cmake='yes'
 let g:C_UseTool_doxygen='yes' 
-
-"Set a keyboard for ericcurtin/CurtineIncSw.vim plugin
-map <F5> :call CurtineIncSw()<CR>
 
 set number
 set relativenumber
@@ -73,18 +68,18 @@ vnoremap <C-y> "+y
 "vnoremap <C-p> "+p
 
 "let mapleader=","
-let &path.="/usr/include/,/usr/include/c++/7"
+"let &path.="/usr/include/,/usr/include/c++/7"
 
 "EasyMotion binding start
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
 " `s{char}{label}`
-nmap <leader>s <Plug>(easymotion-overwin-f)
+"nmap <leader>s <Plug>(easymotion-overwin-f)
 " or
 " `s{char}{char}{label}`
 " Need one more keystroke, but on average, it may be more comfortable.
-"nmap <leader>s <Plug>(easymotion-overwin-f2)
+nmap <leader>s <Plug>(easymotion-overwin-f2)
 
 " Turn on case-insensitive feature
 let g:EasyMotion_smartcase = 1
@@ -97,11 +92,6 @@ map <Leader>k <Plug>(easymotion-k)
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 "colorscheme base16-default-dark
 let base16colorspace=256  " Access colors present in 256 colorspace
