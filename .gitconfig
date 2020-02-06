@@ -2,7 +2,7 @@
 	email = jzi@inbox.ru
 	name = p.g.golovkin
 [core]
-	excludesfile = /home/pgg/.gitingnore
+	excludesfile = /home/pgg/.gitignore
    whitespace = trailing-space, space-before-tab, cr-at-eol
 [color]
    diff=auto
