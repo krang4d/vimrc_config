@@ -1,7 +1,13 @@
-let g:ycm_use_clangd = 1
+set nocompatible
+filetype off
+
+set ignorecase
+set smartcase
+set encoding=utf-8
+set cursorline
+"let g:ycm_use_clangd = 1
 
 call plug#begin('~/.vim/plugged')
-
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "Plug 'Valloric/YouCompleteMe'
 "Plug 'majutsushi/tagbar'
@@ -10,27 +16,20 @@ Plug 'vim-scripts/c.vim'
 "Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'easymotion/vim-easymotion'
 "Plug 'vim-syntastic/syntastic'
-"Plug 'ap/vim-buftabline'
+Plug 'ap/vim-buftabline'
 "Plug 'chemzqm/vim-iterm2-start'
-"Fuzzy finder files and Library L9 to do
-"Plug 'eparreno/vim-l9'
-"Plug 'vim-scripts/FuzzyFinder'
 Plug 'kien/ctrlp.vim'
-"Fuzzy end
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mattn/emmet-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-
 Plug 'tpope/vim-surround'
 
-" colorschemes
+"Colorschemes
 "Plug 'chriskempson/base16-vim'
 Plug 'gorodinskiy/vim-coloresque'
-
 call plug#end()
 
 "To enable the tools for cmake or doxygen by c.vim plugin
@@ -43,7 +42,7 @@ let g:C_UseTool_doxygen='yes'
 set number
 set relativenumber
 
-"Настройка отступов
+"Tabs
 set smarttab
 set smartindent
 set expandtab
@@ -72,15 +71,18 @@ map <silent> <leader><leader> :NERDTreeToggle<CR>
 " majutsushi/tagbar
 "nmap <F8> :TagbarToggle<CR>
 
+"CtrlP
 "let g:ctrlp_map = '<c-]>'
 "let g:ctrlp_cmd = 'Ctrl]'
+let g:ctrlp_working_path_mode = 'ra'
 
+"Disable arrow navigation in the normal mode
 "noremap <Up> <NOP>
 "noremap <Down> <NOP>
 "noremap <Left> <NOP>
 "noremap <Right> <NOP>
 
-"copy/past mapping, need to install +xterm-clipboard (apt-get install vim-gtk)
+"Copy/past mapping, depend of +xterm-clipboard (apt-get install vim-gtk)
 "nnoremap <C-y> "+y
 "vnoremap <C-y> "+y
 "nnoremap <C-p> "+p
@@ -120,5 +122,6 @@ map <Leader>k <Plug>(easymotion-k)
 "colorscheme base16-default-dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 
+":set list
 set listchars=eol:$,precedes:«,extends:»,space:·,tab:→-,trail:-,nbsp:%
  
