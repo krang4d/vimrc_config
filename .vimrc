@@ -74,6 +74,7 @@ map <silent> <leader><leader> :NERDTreeToggle<CR>
 "CtrlP
 "let g:ctrlp_map = '<c-]>'
 "let g:ctrlp_cmd = 'Ctrl]'
+"let g:ctrlp_switch_buffe = '<c-]>'
 let g:ctrlp_working_path_mode = 'ra'
 
 "Disable arrow navigation in the normal mode
