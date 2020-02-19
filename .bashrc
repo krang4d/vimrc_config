@@ -125,3 +125,5 @@ alias v='vim'
 alias vv='sudo vim'
 alias r='ranger'
 alias rr='sudo ranger'
+
+alias open='caja $PWD'
